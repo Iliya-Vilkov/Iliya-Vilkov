@@ -1,57 +1,233 @@
-## Hi there 👋
+# Илья Вилков - Python Developer
 
-I'm **Iliya Vilkov**, a passionate backend developer specializing in Python and Django.
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-5.2.7-green.svg)](https://djangoproject.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-blue.svg)](https://postgresql.org)
+[![Docker](https://img.shields.io/badge/Docker-20+-blue.svg)](https://docker.com)
 
-### 🚀 About Me
+Привет! Я Python-разработчик с опытом создания полнофункциональных веб-приложений, REST API и Telegram-ботов.
 
-- 🔭 I'm currently working on **Foodgram** - a recipe sharing platform with Django REST API and React frontend
-- 🌱 I'm currently learning **Docker**, **PostgreSQL**, and **REST API development**
-- 💬 Ask me about **Python**, **Django**, **API development**, or **Docker**
-- 📫 How to reach me: [enot19vilkov@yandex.ru](mailto:enot19vilkov@yandex.ru)
-- ⚡ Fun fact: I love cooking and coding!
+## 💼 Обо мне
 
-### 🛠️ Tech Stack
+- 🌍 **Местоположение**: Нижний Новгород, Россия
+- 📧 **Email**: enot19vilkov@yandex.ru
+- 📱 **Телефон**: +7 (920) 028-28-21
+- 💼 **Статус**: Ищу возможности для работы (Python-разработчик)
+- 🎓 **Образование**: Python-разработчик в Яндекс Практикуме (2026)
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white)
-![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=Django&logoColor=white)
-![Django REST](https://img.shields.io/badge/-Django%20REST-ff1709?style=flat-square&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+## 🛠️ Технологический стек
 
-### 📊 GitHub Stats
+### Backend
+- **Языки**: Python 3.x
+- **Фреймворки**: Django, Django REST Framework (DRF)
+- **Базы данных**: PostgreSQL
+- **API**: REST API, работа с внешними API
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Iliya-Vilkov&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF)
+### DevOps & Инструменты
+- **Контейнеризация**: Docker, Docker Compose
+- **Веб-серверы**: Nginx
+- **CI/CD**: GitHub Actions
+- **Безопасность**: SSL/HTTPS
+- **Версионный контроль**: Git, GitHub
+- **Тестирование**: Postman, pytest
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Iliya-Vilkov&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF)
+### Дополнительно
+- PyTelegramBot (Telegram-боты)
+- Библиотеки: requests, Djoser, django-filter
+- Методологии: ООП, CRUD операции, API разработка
 
-### 🔥 Current Project: Foodgram
+## 🚀 Основные проекты
 
-**Foodgram** is a full-stack recipe sharing platform where users can:
-- 📝 Create and share recipes
-- ⭐ Add recipes to favorites
-- 🛒 Build shopping lists
-- 👥 Follow other users
-- 🏷️ Filter recipes by tags and ingredients
+### 1. 🍽️ Foodgram - Социальная сеть для обмена рецептами
 
-**Tech Stack:**
-- Backend: Django REST Framework, PostgreSQL, Docker
-- Frontend: React, JavaScript
-- DevOps: GitHub Actions, Docker Compose
-- Deployment: Yandex Cloud
+Полнофункциональное веб-приложение для публикации и обмена рецептами с функциями социальной сети.
 
-### 📈 Contribution Graph
+**Основные возможности:**
+- Регистрация и авторизация пользователей
+- Создание, редактирование и удаление рецептов
+- Система тегов для категоризации
+- Избранные рецепты
+- Подписки на авторов
+- Список покупок с возможностью скачивания
+- Поиск рецептов по ингредиентам и тегам
 
-![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=Iliya-Vilkov&theme=redical&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF)
+**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Docker, Docker Compose, Nginx, Djoser, django-filter
 
-### 🤝 Let's Connect
+**Особенности:**
+- ✅ Проект развернут в продакшене
+- ✅ Настроен автоматический деплой через CI/CD (GitHub Actions)
+- ✅ Настроен SSL/HTTPS для продакшена
+- ✅ Docker контейнеризация для разработки и продакшена
 
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Iliya-Vilkov)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:enot19vilkov@yandex.ru)
+**🔗 Ссылки:**
+- [GitHub](https://github.com/Iliya-Vilkov/foodgram)
+- [Демо (Production)](http://foodgrambest.sytes.net)
 
 ---
 
-⭐️ From [Iliya-Vilkov](https://github.com/Iliya-Vilkov)
+### 2. 🎬 MovieHub - Социальная платформа для обмена фильмами
+
+Веб-приложение для публикации и обмена информацией о фильмах и сериалах.
+
+**Основные возможности:**
+- Регистрация и авторизация пользователей
+- Создание, редактирование и удаление описаний фильмов
+- Система жанров для категоризации фильмов
+- Избранные фильмы
+- Подписки на авторов
+- Список для просмотра (Watchlist)
+- Поиск фильмов по актёрам и жанрам
+- Рейтинги фильмов
+- Комментарии к фильмам
+**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Docker, Docker Compose, Nginx, Djoser, django-filter
+
+**🔗 Ссылки:**
+- [GitHub](https://github.com/Iliya-Vilkov) (по запросу)
+
+---
+
+### 3. 📝 Yatube - Платформа с REST API
+
+Платформа для публикации и управления контентом с полнофункциональным REST API.
+
+**Основные возможности:**
+- Спроектированные и реализованные модели данных
+- CRUD операции через REST API
+- Выгрузка данных в формате JSON
+- Безопасность работы с данными
+- Оптимизированная производительность системы
+- Полное тестирование всех эндпоинтов
+
+**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Postman
+
+**🔗 Ссылки:**
+- [GitHub](https://github.com/Iliya-Vilkov/api-final-yatube)
+
+---
+
+### 4. 📚 Блогикум - Образовательное веб-приложение
+
+Платформа для обучения и обмена знаниями с функционалом создания и редактирования статей.
+
+**Основные возможности:**
+- Backend приложение с нуля
+- Пользовательский интерфейс
+- Функционал создания и редактирования статей
+
+**Технологии:** Python, Django, PostgreSQL
+
+**🔗 Ссылки:**
+- [GitHub](https://github.com/Iliya-Vilkov/django-sprint4)
+
+---
+
+### 5. 🤖 Telegram-боты
+
+#### Homework Bot - Бот для мониторинга статуса заданий
+- Автоматические уведомления о статусе заданий на учебной платформе
+- Интеграция с внешними API
+
+#### Weather Bot - Бот-синоптик
+- Интеграция с внешним API для получения прогноза погоды
+- Поддержка городов и поселков
+
+#### R2D2 Helper Bot - Развлекательный сервисный бот
+- Получение случайных фотографий животных
+- Шутливые комментарии
+
+**Технологии:** Python, Django, Django REST Framework, PostgreSQL, PyTelegramBot, внешние API
+
+**🔗 Ссылки:**
+- [Homework Bot](https://github.com/Iliya-Vilkov/homework-bot)
+- [R2D2 Helper Bot](https://github.com/Iliya-Vilkov/r2d2helperbot)
+
+---
+
+### 6. 🐍 The Snake - Классическая игра
+
+Классическая игра "Змейка", написанная с использованием парадигмы ООП.
+
+**Основные возможности:**
+- Реализованная игровая логика с применением принципов ООП
+- Качественный, читаемый и поддерживаемый код
+- Корректное визуальное оформление игры
+
+**Технологии:** Python, ООП
+
+**🔗 Ссылки:**
+- [GitHub](https://github.com/Iliya-Vilkov/the_snake)
+
+---
+
+## 📊 Статистика GitHub
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Iliya-Vilkov&show_icons=true&theme=radical)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Iliya-Vilkov&layout=compact&theme=radical)
+
+## 🎯 Ключевые навыки
+
+### Backend разработка
+- ✅ Разработка REST API с использованием Django REST Framework
+- ✅ Проектирование и реализация моделей данных
+- ✅ Интеграция с внешними API
+- ✅ Системы аутентификации и авторизации
+- ✅ Оптимизация производительности
+- ✅ Работа с базами данных (PostgreSQL)
+
+### DevOps
+- ✅ Docker и Docker Compose для контейнеризации
+- ✅ Настройка Nginx для веб-серверов
+- ✅ Автоматизация деплоя через CI/CD (GitHub Actions)
+- ✅ Настройка SSL/HTTPS для продакшена
+- ✅ Администрирование веб-сайтов
+
+### Тестирование
+- ✅ Написание тестов (pytest)
+- ✅ Тестирование API через Postman
+- ✅ Обеспечение качества кода
+
+## 📈 Опыт работы
+
+**Python-разработчик** | Проектная работа | Январь 2024 — настоящее время (1 год 11 месяцев)
+
+Работаю над различными проектами, включая:
+- Разработку Telegram-ботов
+- Создание веб-приложений с Django
+- Разработку REST API
+- Контейнеризацию приложений
+- Развертывание в продакшене
+
+## 🎓 Образование
+
+**Бакалавр** | Яндекс Практикум | 2026 (ожидается)
+- Специализация: Python-разработчик расширенный, Python-разработчик
+
+## 📫 Контакты
+
+- 📧 **Email**: enot19vilkov@yandex.ru
+- 📱 **Телефон**: +7 (920) 028-28-21
+- 💼 **GitHub**: [@Iliya-Vilkov](https://github.com/Iliya-Vilkov)
+- 📍 **Местоположение**: Нижний Новгород, Россия
+- ✅ **Готов к переезду**: Да
+- ✅ **Готов к командировкам**: Да
+
+## 🌟 Достижения
+
+- ✅ Разработал несколько полнофункциональных веб-приложений с нуля
+- ✅ Развернул проект в продакшене с SSL/HTTPS
+- ✅ Настроил автоматический деплой через CI/CD
+- ✅ Обеспечил интеграцию с внешними API
+- ✅ Применил лучшие практики DevOps
+
+## 💡 В процессе изучения
+
+- Продолжаю углублять знания в Django и Django REST Framework
+- Изучаю продвинутые техники оптимизации производительности
+- Совершенствую навыки работы с Docker и Kubernetes
+
+---
+
+⭐ Если вам понравились мои проекты, поставьте звезду! Это мотивирует меня продолжать разработку.
+
+**Последнее обновление**: Ноябрь 2025
