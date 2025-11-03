@@ -82,7 +82,7 @@
 **Технологии:** Python, Django, Django REST Framework, PostgreSQL, Docker, Docker Compose, Nginx, Djoser, django-filter
 
 **🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov) (по запросу)
+- [GitHub](https://github.com/Iliya-Vilkov/MovieHub)
 
 ---
 
