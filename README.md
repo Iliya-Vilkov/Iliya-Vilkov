@@ -106,10 +106,14 @@ Event-driven REST API для управления бронированием с�
 - **2019** — НГИЭУ, Бакалавр, Инфокоммуникационные технологии
 - **2018** — Академия Айти, Python-разработчик
 
-## GitHub статистика
+## Репозитории
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Iliya-Vilkov&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Iliya-Vilkov&layout=compact&theme=radical)
+| Проект | Стек | Ссылки |
+|---|---|---|
+| **Equilic** | Django, DRF, Celery, Redis, PostgreSQL | [Демо](http://77.91.84.94/) |
+| **BookingSeats** | FastAPI, RabbitMQ, Celery, SQLAlchemy | [GitHub](https://github.com/Iliya-Vilkov/BOOKING_SEATS) · [Docs](https://booking-seat.ru/docs) |
+| **Foodgram** | Django, DRF, Docker, Nginx, CI/CD | [GitHub](https://github.com/Iliya-Vilkov/foodgram) · [Демо](http://foodgrambest.sytes.net) |
+| **MovieHub** | Django, DRF, PostgreSQL, Docker | [GitHub](https://github.com/Iliya-Vilkov/MovieHub) |
 
 ---
 
