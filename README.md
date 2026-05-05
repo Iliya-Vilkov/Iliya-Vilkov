@@ -1,233 +1,116 @@
-# Илья Вилков - Python Developer
+# Илья Вилков — Python Developer
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
-[![Django](https://img.shields.io/badge/Django-5.2.7-green.svg)](https://djangoproject.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-blue.svg)](https://postgresql.org)
-[![Docker](https://img.shields.io/badge/Docker-20+-blue.svg)](https://docker.com)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
+[![Django](https://img.shields.io/badge/Django-6.x-green.svg)](https://djangoproject.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16+-blue.svg)](https://postgresql.org)
+[![Docker](https://img.shields.io/badge/Docker-✓-2496ED.svg)](https://docker.com)
+[![RabbitMQ](https://img.shields.io/badge/RabbitMQ-✓-FF6600.svg)](https://rabbitmq.com)
+[![Celery](https://img.shields.io/badge/Celery-5.x-37814A.svg)](https://docs.celeryq.dev)
 
-Привет! Я Python-разработчик с опытом создания полнофункциональных веб-приложений, REST API и Telegram-ботов.
+Backend Python-разработчик с коммерческим опытом в продуктовой команде и собственным SaaS-проектом в продакшене.
 
-## 💼 Обо мне
+## Обо мне
 
-- 🌍 **Местоположение**: Нижний Новгород, Россия
-- 📧 **Email**: enot19vilkov@yandex.ru
-- 📱 **Телефон**: +7 (920) 028-28-21
-- 💼 **Статус**: Ищу возможности для работы (Python-разработчик)
-- 🎓 **Образование**: Python-разработчик в Яндекс Практикуме (2026)
+- **Местоположение**: Нижний Новгород (готов к переезду в Москву, СПб, Казань)
+- **Email**: enot19vilkov@yandex.ru
+- **Telegram**: [@EnotDD](https://t.me/EnotDD)
+- **LinkedIn**: [ilia-vilkov](https://www.linkedin.com/in/ilia-vilkov-52806a391/)
+- **Статус**: в поиске работы — Python Backend Developer
 
-## 🛠️ Технологический стек
+## Технологический стек
 
-### Backend
-- **Языки**: Python 3.x
-- **Фреймворки**: Django, Django REST Framework (DRF)
-- **Базы данных**: PostgreSQL
-- **API**: REST API, работа с внешними API
+| Категория | Технологии |
+|---|---|
+| **Языки** | Python 3.12+ |
+| **Фреймворки** | FastAPI, Django, Django REST Framework |
+| **БД и ORM** | PostgreSQL, SQLAlchemy, Alembic, django ORM |
+| **Очереди / события** | RabbitMQ (aio-pika), Celery, Flower |
+| **Кэш** | Redis |
+| **Аутентификация** | JWT, Djoser |
+| **DevOps** | Docker, Docker Compose, Nginx, GitHub Actions (CI/CD) |
+| **Тестирование** | pytest, pytest-django, pytest-asyncio, unittest |
+| **Инструменты** | Git, Linux, Pydantic v2, Sentry, Loguru |
 
-### DevOps & Инструменты
-- **Контейнеризация**: Docker, Docker Compose
-- **Веб-серверы**: Nginx
-- **CI/CD**: GitHub Actions
-- **Безопасность**: SSL/HTTPS
-- **Версионный контроль**: Git, GitHub
-- **Тестирование**: Postman, pytest
+## Проекты
 
-### Дополнительно
-- PyTelegramBot (Telegram-боты)
-- Библиотеки: requests, Djoser, django-filter
-- Методологии: ООП, CRUD операции, API разработка
+### Equilic — SaaS-платформа для управления продуктивностью
 
-## 🚀 Основные проекты
+Fullstack SaaS-приложение с модулями дневника, задач, финансов и календаря. Разработал архитектуру с нуля и довёл до production-ready состояния.
 
-### 1. 🍽️ Foodgram - Социальная сеть для обмена рецептами
+**Стек:** Django 6, DRF, PostgreSQL, Celery, Redis, Docker, pytest, Sentry
 
-Полнофункциональное веб-приложение для публикации и обмена рецептами с функциями социальной сети.
+**Ключевые решения:**
+- 26 Django-моделей с GIN-индексами (PostgreSQL full-text search) и DB-level constraints
+- 40+ REST-эндпоинтов с OpenAPI-документацией (drf-spectacular / Swagger UI)
+- Асинхронные задачи на Celery + Redis: отчёты, напоминания с quiet hours, управление trial-подписками
+- Signal-driven инвалидация кэша: изменения мгновенно сбрасывают Redis-кэш конкретного пользователя
+- Биллинг: trial → active → past_due → cancelled с webhook-обработчиком и feature flags
+- 75 тестов (pytest-django), CI с проверкой миграций, Sentry в production
 
-**Основные возможности:**
-- Регистрация и авторизация пользователей
-- Создание, редактирование и удаление рецептов
-- Система тегов для категоризации
-- Избранные рецепты
-- Подписки на авторов
-- Список покупок с возможностью скачивания
-- Поиск рецептов по ингредиентам и тегам
-
-**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Docker, Docker Compose, Nginx, Djoser, django-filter
-
-**Особенности:**
-- ✅ Проект развернут в продакшене
-- ✅ Настроен автоматический деплой через CI/CD (GitHub Actions)
-- ✅ Настроен SSL/HTTPS для продакшена
-- ✅ Docker контейнеризация для разработки и продакшена
-
-**🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov/foodgram)
-- [Демо (Production)](http://foodgrambest.sytes.net)
+**Ссылки:** [Демо](http://77.91.84.94/) | Проект проходит юридическую регистрацию, готовится к релизу
 
 ---
 
-### 2. 🎬 MovieHub - Социальная платформа для обмена фильмами
+### BookingSeats — Система бронирования мест в кафе (командный проект)
 
-Веб-приложение для публикации и обмена информацией о фильмах и сериалах.
+Event-driven REST API для управления бронированием столов в кафе.
 
-**Основные возможности:**
-- Регистрация и авторизация пользователей
-- Создание, редактирование и удаление описаний фильмов
-- Система жанров для категоризации фильмов
-- Избранные фильмы
-- Подписки на авторов
-- Список для просмотра (Watchlist)
-- Поиск фильмов по актёрам и жанрам
-- Рейтинги фильмов
-- Комментарии к фильмам
-**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Docker, Docker Compose, Nginx, Djoser, django-filter
+**Стек:** FastAPI, PostgreSQL, SQLAlchemy, Alembic, RabbitMQ, Celery, Flower, Docker, JWT, Pydantic v2
 
-**🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov/MovieHub)
+**Ключевые решения:**
+- Event-driven архитектура: Outbox Pattern → RabbitMQ → Celery
+- REST API: кафе, столы, временные слоты, блюда, акции, бронирования, медиа
+- Outbox Pattern — надёжная доставка событий без потерь при сбоях брокера
+- Email-нотификации через Celery + мониторинг задач через Flower (basic auth)
+- Сквозная трассировка запросов через correlation_id (X-Request-ID) от API до Celery
+
+**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/BOOKING_SEATS) | [Документация API](https://booking-seat.ru/docs)
 
 ---
 
-### 3. 📝 Yatube - Платформа с REST API
+### Foodgram — Социальная сеть для рецептов
 
-Платформа для публикации и управления контентом с полнофункциональным REST API.
+Полноценный backend с REST API, системой аутентификации, подписками, избранным, списком покупок и фильтрацией по тегам.
 
-**Основные возможности:**
-- Спроектированные и реализованные модели данных
-- CRUD операции через REST API
-- Выгрузка данных в формате JSON
-- Безопасность работы с данными
-- Оптимизированная производительность системы
-- Полное тестирование всех эндпоинтов
+**Стек:** Python, Django, DRF, PostgreSQL, Docker, Nginx, GitHub Actions
 
-**Технологии:** Python, Django, Django REST Framework, PostgreSQL, Postman
-
-**🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov/api-final-yatube)
+**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/foodgram) | [Продакшен](http://foodgrambest.sytes.net)
 
 ---
 
-### 4. 📚 Блогикум - Образовательное веб-приложение
+### MovieHub — Платформа для обмена фильмами
 
-Платформа для обучения и обмена знаниями с функционалом создания и редактирования статей.
+Сложные модели: фильмы, жанры, актёры, рейтинги, комментарии. Избранное, подписки, watchlist, поиск по жанрам и актёрам.
 
-**Основные возможности:**
-- Backend приложение с нуля
-- Пользовательский интерфейс
-- Функционал создания и редактирования статей
+**Стек:** Python, Django, DRF, PostgreSQL, Docker
 
-**Технологии:** Python, Django, PostgreSQL
-
-**🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov/django-sprint4)
+**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/MovieHub)
 
 ---
 
-### 5. 🤖 Telegram-боты
+## Опыт работы
 
-#### Homework Bot - Бот для мониторинга статуса заданий
-- Автоматические уведомления о статусе заданий на учебной платформе
-- Интеграция с внешними API
+**Python Developer** | [PRODUCTLAB](https://tablecrm.com) | Июнь 2025 — Ноябрь 2025
+- REST API на FastAPI, интеграция с Т-Банком и онлайн-кассой
+- Загрузка изображений через AWS S3
+- Рефакторинг: устранил 1000+ ошибок линтера, снизил технический долг
+- Команда 16–18 человек, Scrum, code review, pytest
 
-#### Weather Bot - Бот-синоптик
-- Интеграция с внешним API для получения прогноза погоды
-- Поддержка городов и поселков
+**Python-разработчик** | Проектная работа | Февраль 2023 — Май 2025
+- Foodgram, MovieHub, BookingSeats, Telegram-боты
 
-#### R2D2 Helper Bot - Развлекательный сервисный бот
-- Получение случайных фотографий животных
-- Шутливые комментарии
+## Образование
 
-**Технологии:** Python, Django, Django REST Framework, PostgreSQL, PyTelegramBot, внешние API
+- **2026** — Яндекс Практикум, Python-разработчик (расширенный уровень)
+- **2019** — НГИЭУ, Бакалавр, Инфокоммуникационные технологии
+- **2018** — Академия Айти, Python-разработчик
 
-**🔗 Ссылки:**
-- [Homework Bot](https://github.com/Iliya-Vilkov/homework-bot)
-- [R2D2 Helper Bot](https://github.com/Iliya-Vilkov/r2d2helperbot)
-
----
-
-### 6. 🐍 The Snake - Классическая игра
-
-Классическая игра "Змейка", написанная с использованием парадигмы ООП.
-
-**Основные возможности:**
-- Реализованная игровая логика с применением принципов ООП
-- Качественный, читаемый и поддерживаемый код
-- Корректное визуальное оформление игры
-
-**Технологии:** Python, ООП
-
-**🔗 Ссылки:**
-- [GitHub](https://github.com/Iliya-Vilkov/the_snake)
-
----
-
-## 📊 Статистика GitHub
+## GitHub статистика
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Iliya-Vilkov&show_icons=true&theme=radical)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Iliya-Vilkov&layout=compact&theme=radical)
-
-## 🎯 Ключевые навыки
-
-### Backend разработка
-- ✅ Разработка REST API с использованием Django REST Framework
-- ✅ Проектирование и реализация моделей данных
-- ✅ Интеграция с внешними API
-- ✅ Системы аутентификации и авторизации
-- ✅ Оптимизация производительности
-- ✅ Работа с базами данных (PostgreSQL)
-
-### DevOps
-- ✅ Docker и Docker Compose для контейнеризации
-- ✅ Настройка Nginx для веб-серверов
-- ✅ Автоматизация деплоя через CI/CD (GitHub Actions)
-- ✅ Настройка SSL/HTTPS для продакшена
-- ✅ Администрирование веб-сайтов
-
-### Тестирование
-- ✅ Написание тестов (pytest)
-- ✅ Тестирование API через Postman
-- ✅ Обеспечение качества кода
-
-## 📈 Опыт работы
-
-**Python-разработчик** | Проектная работа | Январь 2024 — настоящее время (1 год 11 месяцев)
-
-Работаю над различными проектами, включая:
-- Разработку Telegram-ботов
-- Создание веб-приложений с Django
-- Разработку REST API
-- Контейнеризацию приложений
-- Развертывание в продакшене
-
-## 🎓 Образование
-
-**Бакалавр** | Яндекс Практикум | 2026 (ожидается)
-- Специализация: Python-разработчик расширенный, Python-разработчик
-
-## 📫 Контакты
-
-- 📧 **Email**: enot19vilkov@yandex.ru
-- 📱 **Телефон**: +7 (920) 028-28-21
-- 💼 **GitHub**: [@Iliya-Vilkov](https://github.com/Iliya-Vilkov)
-- 📍 **Местоположение**: Нижний Новгород, Россия
-- ✅ **Готов к переезду**: Да
-- ✅ **Готов к командировкам**: Да
-
-## 🌟 Достижения
-
-- ✅ Разработал несколько полнофункциональных веб-приложений с нуля
-- ✅ Развернул проект в продакшене с SSL/HTTPS
-- ✅ Настроил автоматический деплой через CI/CD
-- ✅ Обеспечил интеграцию с внешними API
-- ✅ Применил лучшие практики DevOps
-
-## 💡 В процессе изучения
-
-- Продолжаю углублять знания в Django и Django REST Framework
-- Изучаю продвинутые техники оптимизации производительности
-- Совершенствую навыки работы с Docker и Kubernetes
 
 ---
 
-⭐ Если вам понравились мои проекты, поставьте звезду! Это мотивирует меня продолжать разработку.
-
-**Последнее обновление**: Ноябрь 2025
+**Последнее обновление**: Май 2026
