@@ -91,6 +91,12 @@ Event-driven REST API для управления бронированием с�
 
 ## Опыт работы
 
+**Python-разработчик** | Equilic | Ноябрь 2025 — настоящее время
+- Спроектировал SaaS-платформу с нуля: 26 Django-моделей, 40+ REST-эндпоинтов, биллинг
+- Celery + Redis: асинхронные задачи, signal-driven инвалидация кэша
+- 75 тестов (pytest-django), CI с проверкой миграций, Sentry в production
+- Docker Compose для локальной и production-среды
+
 **Python Developer** | [PRODUCTLAB](https://tablecrm.com) | Июнь 2025 — Ноябрь 2025
 - REST API на FastAPI, интеграция с Т-Банком и онлайн-кассой
 - Загрузка изображений через AWS S3
