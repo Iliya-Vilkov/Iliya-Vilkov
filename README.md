@@ -1,4 +1,4 @@
-# Илья Вилков — Python Developer
+# Ilia Vilkov — Python Developer
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
@@ -8,119 +8,119 @@
 [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-✓-FF6600.svg)](https://rabbitmq.com)
 [![Celery](https://img.shields.io/badge/Celery-5.x-37814A.svg)](https://docs.celeryq.dev)
 
-Backend Python-разработчик с коммерческим опытом в продуктовой команде и собственным SaaS-проектом в продакшене.
+Python Backend Developer with commercial experience in a product team and a production SaaS project.
 
-## Обо мне
+## About
 
-- **Местоположение**: Нижний Новгород (готов к переезду в Москву, СПб, Казань)
-- **Email**: enot19vilkov@yandex.ru
+- **Location**: Nizhny Novgorod, Russia (open to relocation: Moscow, Saint Petersburg)
+- **Email**: iliyavilkov@gmail.com
 - **Telegram**: [@EnotDD](https://t.me/EnotDD)
 - **LinkedIn**: [ilia-vilkov](https://www.linkedin.com/in/ilia-vilkov-52806a391/)
-- **Статус**: в поиске работы — Python Backend Developer
+- **Status**: Open to work — Python Backend Developer
 
-## Технологический стек
+## Tech Stack
 
-| Категория | Технологии |
+| Category | Technologies |
 |---|---|
-| **Языки** | Python 3.12+ |
-| **Фреймворки** | FastAPI, Django, Django REST Framework |
-| **БД и ORM** | PostgreSQL, SQLAlchemy, Alembic, django ORM |
-| **Очереди / события** | RabbitMQ (aio-pika), Celery, Flower |
-| **Кэш** | Redis |
-| **Аутентификация** | JWT, Djoser |
+| **Languages** | Python 3.12+ |
+| **Frameworks** | FastAPI, Django, Django REST Framework |
+| **DB & ORM** | PostgreSQL, SQLAlchemy, Alembic, Django ORM |
+| **Queues / Events** | RabbitMQ (aio-pika), Celery, Flower |
+| **Cache** | Redis |
+| **Auth** | JWT, Djoser |
 | **DevOps** | Docker, Docker Compose, Nginx, GitHub Actions (CI/CD) |
-| **Тестирование** | pytest, pytest-django, pytest-asyncio, unittest |
-| **Инструменты** | Git, Linux, Pydantic v2, Sentry, Loguru |
+| **Testing** | pytest, pytest-django, pytest-asyncio, unittest |
+| **Tools** | Git, Linux, Pydantic v2, Sentry, Loguru |
 
-## Проекты
+## Projects
 
-### Equilic — SaaS-платформа для управления продуктивностью
+### Equilic — SaaS Productivity Platform
 
-Fullstack SaaS-приложение с модулями дневника, задач, финансов и календаря. Разработал архитектуру с нуля и довёл до production-ready состояния.
+Fullstack SaaS application with diary, tasks, finance and calendar modules. Designed architecture from scratch and brought to production-ready state.
 
-**Стек:** Django 6, DRF, PostgreSQL, Celery, Redis, Docker, pytest, Sentry
+**Stack:** Django 6, DRF, PostgreSQL, Celery, Redis, Docker, pytest, Sentry
 
-**Ключевые решения:**
-- 26 Django-моделей с GIN-индексами (PostgreSQL full-text search) и DB-level constraints
-- 40+ REST-эндпоинтов с OpenAPI-документацией (drf-spectacular / Swagger UI)
-- Асинхронные задачи на Celery + Redis: отчёты, напоминания с quiet hours, управление trial-подписками
-- Signal-driven инвалидация кэша: изменения мгновенно сбрасывают Redis-кэш конкретного пользователя
-- Биллинг: trial → active → past_due → cancelled с webhook-обработчиком и feature flags
-- 75 тестов (pytest-django), CI с проверкой миграций, Sentry в production
+**Key decisions:**
+- 26 Django models with GIN indexes (PostgreSQL full-text search) and DB-level constraints
+- 40+ REST endpoints with OpenAPI docs (drf-spectacular / Swagger UI)
+- Async tasks on Celery + Redis: reports, reminders with quiet hours, trial subscription management
+- Signal-driven cache invalidation: changes instantly flush Redis cache for the specific user
+- Billing: trial → active → past_due → cancelled with webhook handler and feature flags
+- 75 tests (pytest-django), CI with migration checks, Sentry in production
 
-**Ссылки:** [Демо](http://77.91.84.94/) | Проект проходит юридическую регистрацию, готовится к релизу
-
----
-
-### BookingSeats — Система бронирования мест в кафе (командный проект)
-
-Event-driven REST API для управления бронированием столов в кафе.
-
-**Стек:** FastAPI, PostgreSQL, SQLAlchemy, Alembic, RabbitMQ, Celery, Flower, Docker, JWT, Pydantic v2
-
-**Ключевые решения:**
-- Event-driven архитектура: Outbox Pattern → RabbitMQ → Celery
-- REST API: кафе, столы, временные слоты, блюда, акции, бронирования, медиа
-- Outbox Pattern — надёжная доставка событий без потерь при сбоях брокера
-- Email-нотификации через Celery + мониторинг задач через Flower (basic auth)
-- Сквозная трассировка запросов через correlation_id (X-Request-ID) от API до Celery
-
-**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/BOOKING_SEATS) | [Документация API](https://booking-seat.ru/docs)
+**Links:** [Demo](http://77.91.84.94/) | Project is undergoing legal registration, preparing for release
 
 ---
 
-### Foodgram — Социальная сеть для рецептов
+### BookingSeats — Cafe Seat Booking System (team project)
 
-Полноценный backend с REST API, системой аутентификации, подписками, избранным, списком покупок и фильтрацией по тегам.
+Event-driven REST API for managing table reservations in cafes.
 
-**Стек:** Python, Django, DRF, PostgreSQL, Docker, Nginx, GitHub Actions
+**Stack:** FastAPI, PostgreSQL, SQLAlchemy, Alembic, RabbitMQ, Celery, Flower, Docker, JWT, Pydantic v2
 
-**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/foodgram) | [Продакшен](http://foodgrambest.sytes.net)
+**Key decisions:**
+- Event-driven architecture: Outbox Pattern → RabbitMQ → Celery
+- REST API: cafes, tables, time slots, dishes, promotions, bookings, media
+- Outbox Pattern — reliable event delivery without loss on broker failure
+- Email notifications via Celery + task monitoring via Flower (basic auth)
+- End-to-end request tracing via correlation_id (X-Request-ID) from API to Celery
 
----
-
-### MovieHub — Платформа для обмена фильмами
-
-Сложные модели: фильмы, жанры, актёры, рейтинги, комментарии. Избранное, подписки, watchlist, поиск по жанрам и актёрам.
-
-**Стек:** Python, Django, DRF, PostgreSQL, Docker
-
-**Ссылки:** [GitHub](https://github.com/Iliya-Vilkov/MovieHub)
+**Links:** [GitHub](https://github.com/Iliya-Vilkov/BOOKING_SEATS) | [API Docs](https://booking-seat.ru/docs)
 
 ---
 
-## Опыт работы
+### Foodgram — Recipe Social Network
 
-**Python-разработчик** | Equilic | Ноябрь 2025 — настоящее время
-- Спроектировал SaaS-платформу с нуля: 26 Django-моделей, 40+ REST-эндпоинтов, биллинг
-- Celery + Redis: асинхронные задачи, signal-driven инвалидация кэша
-- 75 тестов (pytest-django), CI с проверкой миграций, Sentry в production
-- Docker Compose для локальной и production-среды
+Full-featured backend with REST API, authentication, subscriptions, favourites, shopping list and tag filtering.
 
-**Python Developer** | [PRODUCTLAB](https://tablecrm.com) | Июнь 2025 — Ноябрь 2025
-- REST API на FastAPI, интеграция с Т-Банком и онлайн-кассой
-- Загрузка изображений через AWS S3
-- Рефакторинг: устранил 1000+ ошибок линтера, снизил технический долг
-- Команда 16–18 человек, Scrum, code review, pytest
+**Stack:** Python, Django, DRF, PostgreSQL, Docker, Nginx, GitHub Actions
 
-**Python-разработчик** | Проектная работа | Февраль 2023 — Май 2025
-- Foodgram, MovieHub, BookingSeats, Telegram-боты
+**Links:** [GitHub](https://github.com/Iliya-Vilkov/foodgram) | [Production](http://foodgrambest.sytes.net)
 
-## Образование
+---
 
-- **2026** — Яндекс Практикум, Python-разработчик (расширенный уровень)
-- **2019** — НГИЭУ, Бакалавр, Инфокоммуникационные технологии
-- **2018** — Академия Айти, Python-разработчик
+### MovieHub — Movie Exchange Platform
 
-## Репозитории
+Complex models: movies, genres, actors, ratings, comments. Favourites, subscriptions, watchlist, search by genres and actors.
 
-| Проект | Стек | Ссылки |
+**Stack:** Python, Django, DRF, PostgreSQL, Docker
+
+**Links:** [GitHub](https://github.com/Iliya-Vilkov/MovieHub)
+
+---
+
+## Work Experience
+
+**Python Developer** | Equilic | November 2025 — Present
+- Designed SaaS platform from scratch: 26 Django models, 40+ REST endpoints, billing system
+- Celery + Redis: async tasks, signal-driven cache invalidation
+- 75 tests (pytest-django), CI with migration checks, Sentry in production
+- Docker Compose for local and production environments
+
+**Python Developer** | [PRODUCTLAB](https://tablecrm.com) | June 2025 — November 2025
+- REST API on FastAPI, payment integration with online cash register
+- Image uploads via AWS S3
+- Refactoring: fixed 1000+ linter errors, reduced technical debt
+- Team of 16–18 engineers, Scrum, code review, pytest
+
+**Python Developer** | Personal Projects | February 2023 — May 2025
+- Foodgram, MovieHub, BookingSeats (team project)
+
+## Education
+
+- **2026** — Yandex Practicum, Python Developer (advanced level)
+- **2019** — NSUEE, Bachelor's degree, Information Technologies and Communication Systems
+- **2018** — IT Academy, Python Developer
+
+## Repositories
+
+| Project | Stack | Links |
 |---|---|---|
-| **Equilic** | Django, DRF, Celery, Redis, PostgreSQL | [Демо](http://77.91.84.94/) |
+| **Equilic** | Django, DRF, Celery, Redis, PostgreSQL | [Demo](http://77.91.84.94/) |
 | **BookingSeats** | FastAPI, RabbitMQ, Celery, SQLAlchemy | [GitHub](https://github.com/Iliya-Vilkov/BOOKING_SEATS) · [Docs](https://booking-seat.ru/docs) |
-| **Foodgram** | Django, DRF, Docker, Nginx, CI/CD | [GitHub](https://github.com/Iliya-Vilkov/foodgram) · [Демо](http://foodgrambest.sytes.net) |
+| **Foodgram** | Django, DRF, Docker, Nginx, CI/CD | [GitHub](https://github.com/Iliya-Vilkov/foodgram) · [Demo](http://foodgrambest.sytes.net) |
 | **MovieHub** | Django, DRF, PostgreSQL, Docker | [GitHub](https://github.com/Iliya-Vilkov/MovieHub) |
 
 ---
 
-**Последнее обновление**: Май 2026
+**Last updated**: June 2026
